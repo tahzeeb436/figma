@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>figma</title>
+    <link rel="stylesheet" href="style.css" />
+    <link 
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      /* @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    } */
+ 
+
+
+.title::before,
+.title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 60%;
+  height: 1px;
+  background-color: #FF4C3B; 
+}
+
+.title::before {
+  left: -65%;
+
+}
+
+.title::after {
+  right: -65%;
+
+}
+
+
+    </style>
+  </head>
+  <body>
+    <header class="bg-white">
+      <div class="container mx-auto flex justify-between items-center py-4 px-6">
+          <a href="#" class="text-[#FF4C3B] -500 text-2xl font-bold">Organic</a>
+       
+          <nav class="md:flex space-x-8">
+              <a href="#" class="text-[#252525] -700 ">Home</a>
+              <a href="#" class="text-[#252525] -700 ">About Us</a>
+              <a href="#" class="text-[#252525] -700 ">Products</a>
+          </nav>
+
+          <a href="#" class="md:inline-block bg-[#FF4C3B] -500 text-white py-2 px-4 rounded-lg">Contact Us</a>
+
+      </div>
+
+    
+  </header>
+
+
+
+<section class="relative w-full h-[500px]">
+    <img src="Group 1000004895(1).png" alt="Contact Us" class="object-cover bg-black w-full h-full">
+  
+  <div class="absolute inset-0 flex items-center pl-8  bg-opacity-50">
+      <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-normal uppercase tracking-widest">
+          Contact Us
+      </h1>
+  </div>
+</section>
+
+    <!-- form -->
+    <section class="container mx-auto lg:my-32 md:my-24 my-16 px-5">
+        <form class="max-w-[700px] mx-auto">
+            <div class="flex justify-between md:gap-[20px] gap-0 md:flex-row flex-col">
+                <input type="text" name="first_name" placeholder="First name" class="border border-gray-200 rounded-lg py-2 px-2 md:mb-6 mb-4 md:max-w-[350px] max-w-full w-full">
+                <input type="text" name="last_name" placeholder="Last name" class="border border-gray-200 rounded-lg py-2 px-2 md:mb-6 mb-4 md:max-w-[350px] max-w-full w-full">
+            </div>
+            <div class="flex justify-between md:gap-[20px] gap-0 md:flex-row flex-col">
+                <input type="text" name="phone_number" placeholder="Phone number" class="border border-gray-200 rounded-lg py-2 px-2 md:mb-6 mb-4  md:max-w-[350px] max-w-full w-full">
+                <input type="email" name="email" placeholder="Email" class="border border-gray-200 rounded-lg py-2 px-2 md:mb-6 mb-4  md:max-w-[350px] max-w-full w-full">
+            </div>
+            <textarea name="message" cols="30" rows="8" placeholder="Message" class="border border-gray-200 rounded-lg py-2 px-2 mb-6 max-w-[700px] w-full"></textarea>
+          <div class="flex justify-center w-full ">
+            <button type="submit" class=" bg-[#FF4C3B] text-white py-2 px-6 mb-6 rounded-md">Get a Quote</button>
+          </div>
+        </form>
+    </section>
+
+  
+    
+        <!-- Products Section -->
+
+        <section class="container mx-auto lg:my-32 md:my-24 my-16 px-5">
+          <div class="flex items-center justify-center w-full mb-8 lg:mb-12">
+              <div class="title-container flex items-center justify-center w-full">
+                  <div class="title md:text-3xl text-2xl relative text-center font-bold uppercase">Our Products</div>
+              </div>
+          </div>
+      
+          <div class="flex flex-wrap justify-center gap-4">
+              <div class="border border-gray-200 rounded-lg py-4 px-2 shadow-lg w-44">
+                  <img src="grain1.png" alt="Oats" class="w-full h-auto object-cover mb-2">
+                  <p class="text-center font-normal text-lg">OATS</p>
+              </div>
+              <div class="border border-gray-200 rounded-lg py-4 px-2 shadow-lg w-44">
+                  <img src="Rectangle 4.png" alt="Green Beans" class="w-full h-auto object-cover mb-2">
+                  <p class="text-center font-normal text-lg">GREEN BEANS</p>
+              </div>
+              <div class="border border-gray-200 rounded-lg py-4 px-2 shadow-lg w-44">
+                  <img src="Rectangle 4(1).png" alt="Black Matpe" class="w-full h-auto object-cover mb-2">
+                  <p class="text-center font-normal text-lg">BLACK MATPE</p>
+              </div>
+              <div class="border border-gray-200 rounded-lg py-4 px-2 shadow-lg w-44">
+                  <img src="Rectangle 4(2).png" alt="Rice" class="w-full h-auto object-cover mb-2">
+                  <p class="text-center font-normal text-lg">RICE</p>
+              </div>
+              <div class="border border-gray-200 rounded-lg py-4 px-2 shadow-lg w-44">
+                  <img src="Rectangle 4(3).png" alt="Chana B/W" class="w-full h-auto object-cover mb-2">
+                  <p class="text-center font-normal text-lg">CHANA B/W</p>
+              </div>
+              <div class="border border-gray-200 rounded-lg py-4 px-2 shadow-lg w-44">
+                  <img src="Rectangle 4(4).png" alt="Wheat" class="w-full h-auto object-cover mb-2">
+                  <p class="text-center font-normal text-lg">WHEAT</p>
+              </div>
+              <div class="border border-gray-200 rounded-lg py-4 px-2 shadow-lg w-44">
+                  <img src="Rectangle 4(5).png" alt="Corn" class="w-full h-auto object-cover mb-2">
+                  <p class="text-center font-normal text-lg">CORN</p>
+              </div>
+          </div>
+      </section>
+      
+
+          <!-- footer -->
+
+
+    <footer class=" mt-auto bg-gray-50 py-8 ">
+        <div class="container  mx-auto text-center ">
+            <h2 class="text-2xl font-bold text-[#FF4C3B] -500 mb-4">Organic</h2>
+            <nav class="footer-nav mb-4">
+                <a href="#products" class="text-[#252525]-600  mx-2">Products</a>
+                <a href="#about" class="text-[#252525]-600  mx-2">About</a>
+                <a href="#testimonials" class="text-[#252525]-600  mx-2">Testimonials</a>
+                <a href="#contact" class="text-[#252525]-600  mx-2">Contact</a>
+            </nav>
+            <div class="social-media mb-4">
+                <a href="#" class=" text-[#FF4C3B] -500 mx-2 text-2xl"><i class="fab fa-twitter"></i></a>
+                <a href="#" class=" text-[#FF4C3B] -500 mx-2 text-2xl"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class=" text-[#FF4C3B] -500 mx-2 text-2xl"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+        <div class="text-gray-600 text-center text-sm"><p>Organic.com © Copyright 2023 | All Rights Reserved - Organic</p></div>
+    </footer>
+
+   
+
+
+  </body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link 
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/18.4.1/octicons.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      /* @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    } */
+ 
+    .custom-border {
+          border: 1px solid #e2e8f0; /* Tailwind's gray-200 */
+        }
+
+
+        .title::before,
+         .title::after {
+             content: "";
+             position: absolute;
+             top: 50%;
+             width: 60%;
+             height: 1px;
+             background-color: #FF4C3B; 
+          }
+
+
+        .title::before {
+          left: -65%;
+          width: 60%;
+       }
+
+        .title::after {
+          right: -65%;
+          width: 60%;
+      }
+     
+      @media (max-width: 768px) {
+    .title::before,
+    .title::after {
+      width: 40%;
+      top: 50%;
+    }
+
+    .title::before {
+      left: -45%;
+    }
+
+    .title::after {
+      right: -45%;
+    }
+  }
+     
+      
+    </style>
+</head>
+<body>
+
+    <section class="relative w-full h-[500px]">
+      <img src="BG.png" alt="our Products" class="object-cover w-full h-full">
+    
+      <div class="absolute inset-0 flex items-center justify-center md:justify-start md:pl-8 bg-black bg-opacity-50">
+          <h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-normal uppercase tracking-widest text-center md:text-left">
+              our Products
+          </h1>
+      </div>
+  </section>
+
+    <section class="p-10">
+      <div class="max-w-screen-lg mx-auto space-y-8">
+        <!-- OATS Section -->
+        <div class="bg-white shadow-lg rounded-lg p-6  flex flex-col md:flex-row items-center md:space-x-6">
+          <img src="Rectangle 15.png" alt="Oats" class="w-1/2 md:w-1/3 rounded-lg">
+          <div class="mt-4 md:mt-0 text-center md:text-left">
+            <h2 class="text-xl md:text-2xl font-bold">OATS</h2>
+            <p class="text-[#33415C]  text-sm md:text-base text-center md:text-left">Packed with fiber, protein, vitamins, and minerals, organic oats make a delicious and healthy addition to your diet, whether enjoyed as a warm bowl of oatmeal or used in baking recipes.</p>
+            <div class="flex justify-center md:justify-start space-x-4 mt-4">
+              <button class="bg-white border border-[#FF4C3B] -500 text-[#FF4C3B] px-4 py-2 rounded transition hover:bg-[#FF4C3B] hover:text-white">Contact Us</button>
+              <button class="bg-white text-[#FF4C3B] px-4 py-2 rounded transition hover:bg-[#FF4C3B] hover:text-white">Learn more</button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- BLACK MATPE Section -->
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col md:flex-row items-center md:space-x-6">
+          <div class="mt-4 md:mt-0 text-right text-center md:text-left">
+            <h2 class="flex justify-center md:justify-end text-xl md:text-2xl font-bold">BLACK MATPE</h2>
+            <p class="text-[#33415C]  text-sm md:text-base text-center md:text-left sm:text-right">Nutrient-dense legume that is cultivated without the use of harmful chemicals or pesticides. High in protein, fiber, and essential vitamins and minerals, organic black matpe is a versatile ingredient that can be used in a variety of dishes, from soups and stews to salads and curries.</p>
+            <div class="flex justify-center md:justify-end space-x-4 mt-4">
+              <button class="bg-white border border-red-500 text-[#FF4C3B] px-4 py-2 rounded transition hover:bg-[#FF4C3B] hover:text-white">Contact Us</button>
+            </div>
+          </div>
+          <img src="Rectangle 15(5).png" alt="Black Matpe" class="w-1/2 md:w-1/3 rounded-lg">
+        </div>
+    
+        <!-- RICE Section -->
+        <div class="bg-white shadow-lg rounded-lg p-6  flex flex-col md:flex-row items-center md:space-x-6">
+          <img src="Rectangle 4(6).png" alt="Rice" class="w-1/2 md:w-1/3 rounded-lg">
+          <div class="mt-4 md:mt-0 text-center md:text-left">
+            <h2 class="text-xl md:text-2xl font-bold">RICE</h2>
+            <p class="text-[#33415C] text-sm md:text-base text-center md:text-left">Nourishing grain that is cultivated without the use of synthetic pesticides, herbicides, or fertilizers. Rich in fiber, vitamins, and minerals, organic rice makes a healthy and delicious addition to any meal, whether as a side dish or the base of a flavorful stir-fry or sushi roll.</p>
+            <div class="flex justify-center md:justify-start space-x-4 mt-4">
+              <button class="bg-white border border-[#FF4C3B] text-[#FF4C3B] px-4 py-2 rounded transition hover:bg-[#FF4C3B] hover:text-white">Contact Us</button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- BLACK / WHITE CHANA Section -->
+        <div class="bg-white shadow-lg rounded-lg p-6  flex flex-col md:flex-row items-center md:space-x-6">
+          <div class="mt-4 md:mt-0 text-right text-center md:text-left">
+            <h2 class="flex justify-center md:justify-end text-xl md:text-2xl font-bold">BLACK / WHITE CHANA</h2>
+            <p class="text-[#33415C] text-sm md:text-base text-center md:text-left sm:text-right">Nutritious and flavorful legume that are grown without the use of harmful chemicals. With their high protein and fiber content, organic black and white channa are a healthy and versatile ingredient that can be used in a variety of dishes, from curries and stews to salads and dips.</p>
+            <div class="flex justify-center md:justify-end space-x-4 mt-4">
+              <button class="bg-white border border-[#FF4C3B] text-[#FF4C3B] px-4 py-2 rounded transition hover:bg-[#FF4C3B] hover:text-white">Contact Us</button>
+            </div>
+          </div>
+          <img src="Rectangle 15(1).png" alt="Black / White Chana" class="w-1/2 md:w-1/3 rounded-lg">
+        </div>
+    
+        <!-- Green Mung Beans Section -->
+        <div class="bg-white shadow-lg rounded-lg p-6 flex flex-col md:flex-row items-center md:space-x-6">
+          <img src="Rectangle 15(2).png" alt="green mung beans" class="w-1/2 md:w-1/3 rounded-lg">
+          <div class="mt-4 md:mt-0 text-center md:text-left">
+            <h2 class="text-xl md:text-2xl font-bold">GREEN MUNG BEANS</h2>
+            <p class="text-[#33415C] text-sm md:text-base text-center md:text-left">Nutritious and flavorful legume that are grown without the use of harmful chemicals or pesticides. With their high protein, fiber, and antioxidant content, organic green mung beans are a versatile ingredient that can be used in a variety of dishes, from soups and stews to salads and desserts.</p>
+            <div class="flex justify-center md:justify-start space-x-4 mt-4">
+              <button class="bg-white border border-[#FF4C3B] text-[#FF4C3B] px-4 py-2 rounded transition hover:bg-[#FF4C3B] hover:text-white">Contact Us</button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Corn Section -->
+        <div class="bg-white shadow-lg rounded-lg p-6  flex flex-col md:flex-row items-center md:space-x-6">
+          <div class="mt-4 md:mt-0 text-right text-center md:text-left">
+            <h2 class="flex justify-center md:justify-end text-xl md:text-2xl font-bold">CORN</h2>
+            <p class="text-[#33415C] text-sm md:text-base text-center md:text-left sm:text-right">Organic corn is a delicious and nutrient-rich grain that is grown without the use of harmful pesticides or synthetic fertilizers. With its high fiber and vitamin content, organic corn makes a healthy and tasty addition to any meal, whether enjoyed as a side dish or used in recipes like cornbread, tacos, or salads.</p>
+            <div class="flex justify-center md:justify-end space-x-4 mt-4">
+              <button class="bg-white border border-[#FF4C3B] text-[#FF4C3B] px-4 py-2 rounded transition hover:bg-[#FF4C3B] hover:text-white">Contact Us</button>
+            </div>
+          </div>
+          <img src="Rectangle 15(3).png" alt="corn" class="w-1/2 md:w-1/3 rounded-lg">
+        </div>
+    
+        <!-- Wheat Section -->
+        <div class="bg-white shadow-lg rounded-lg p-6  flex flex-col md:flex-row items-center md:space-x-6">
+          <img src="Rectangle 15(6).png" alt="Wheat" class="w-1/2 md:w-1/3 rounded-lg">
+          <div class="mt-4 md:mt-0 text-center md:text-left">
+            <h2 class="text-xl md:text-2xl font-bold">WHEAT</h2>
+            <p class="text-[#33415C] text-sm md:text-base text-center md:text-left">Organic wheat is a wholesome and nutritious grain that is grown without the use of harmful chemicals or synthetic fertilizers. Rich in fiber, protein, and essential vitamins and minerals, organic wheat is a versatile ingredient that can be used in a variety of dishes, from bread and pasta to baked goods and desserts.</p>
+            <div class="flex justify-center md:justify-start space-x-4 mt-4">
+              <button class="bg-white border border-[#FF4C3B] -500 text-[#FF4C3B] px-4 py-2 rounded transition hover:bg-[#FF4C3B] hover:text-white">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+
+    <section class="max-w-7xl mx-auto px-4 py-10">
+        <div class="flex items-center justify-center w-full mb-6 lg:mb-8 ">
+            <div class="title-container flex items-center justify-center w-full">
+                <div class="title md:text-3xl text-2xl relative text-center font-bold uppercase ">why choose us</div>
+            </div>
+           
+        </div>
+        <p class="text-[#33415C] -600 text-center mb-4 md:mb-6 px-2 ">See What Our Satisfied Customers Have to Say About Our Organic Products!</p>
+
+      
+           <div class="flex flex-wrap justify-center gap-8">
+              <!-- Organic -->
+              <div class="flex flex-col items-center text-center p-4 max-w-xs">
+                  <i class="fas fa-leaf text-[#FF4C3B] -500 text-4xl mb-4"></i>
+                  <h3 class="text-lg font-semibold mb-2">Organic</h3>
+                  <p class="text-[#33415C] -600 leading-tight md:leading-normal">Grown and processed without the use of synthetic chemicals or additives, and is often perceived as healthier and more environmentally friendly.</p>
+              </div>
+              <!-- No Pesticides -->
+              <div class="flex flex-col items-center text-center p-4 max-w-xs">
+                  <i class="fas fa-seedling text-[#FF4C3B] -500 text-4xl mb-4"></i>
+                  <h3 class="text-lg font-semibold mb-2">No Pesticides</h3>
+                  <p class="text-[#33415C] -600 leading-tight md:leading-normal">Produced without the use of synthetic pesticides or other harmful chemicals, making it a safer and healthier option for consumers.</p>
+              </div>
+              <!-- Healthy Life -->
+              <div class="flex flex-col items-center text-center p-4 max-w-xs">
+                  <i class="fas fa-heart text-[#FF4C3B] -500 text-4xl mb-4"></i>
+                  <h3 class="text-lg font-semibold mb-2">Healthy Life</h3>
+                  <p class="text-[#33415C] -600 leading-tight md:leading-normal">Organic foods are often considered healthier because they are produced without artificial chemicals that can harm human health.</p>
+              </div>
+          </div>
+     
+ 
+
+  </section>
+
+
+
+
+
+
+  
+
+
+
+
+
+ 
+
+      
+
+   
+  
+
+
+
+
+
+    
+
+</body>
+</html>
